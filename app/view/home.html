@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center; font-size:34px;">
+    {{'Hello_World'|translate}}
+    <div style="margin-top:25px;">
+      <select ng-model="selectedLanguage" ng-change="changeLanguage()" style="font-size: 20px">
+        <option ng-repeat="lang in languages" value={{lang.value}} >
+          {{ lang.Text | translate }}
+        </option>
+      </select>
+    </div>
+    <div>
+  
+  
